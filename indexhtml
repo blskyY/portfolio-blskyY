@@ -24,7 +24,7 @@
         <nav class="nav-topline">
           <ul class="site-nav list">
             <li class="item">
-              <a href="main.html" class="link current">Главная</a>
+              <a href="index.html" class="link current">Главная</a>
             </li>
 
             <li class="item">
