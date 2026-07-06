@@ -1,0 +1,1297 @@
+/* цвета */
+
+/* цвет основного текста #757575 */
+/* вторичный цвет текста  #212121 */
+/* белый текст и фон #FFFFFF  */
+/* акцент #2196F3 */
+/* цвет фона шапки и футера #2F303A */
+/*цвет фона секции наша команда и фона радиокнопок #F5F4FA */
+/* цвет ховера кнопки заказать услугу #188CE8 */
+/* цвет бордера topline #ECECEC */
+/* цвет бордера картки порфолио #EEEEEE */
+/* цвет кнопки секции клиент #AFB1B8*/
+
+/*переменные*/
+
+:root {
+    --primary-text-color: #ffffff;
+    --title-text-color: #51ff00;
+    --accent-color: #ffffff;
+    --button-color: #313131;
+    --primary-white-color: #111111;
+    --secondary-white-color: #51ff00;
+    --head-footer-bgcolor: #0e0e0e;
+    --secondary-bgcolor: #131313;
+    --secondary-accent-color: #000000;
+    --topline-color: #ececec;
+    --boder-portfolio-color: #eeeeee;
+    --client-color: #afb1b8;
+    --elytra-color: #e100ff;
+    --function-animation: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* общие */
+
+body {
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    user-select: none;
+
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+}
+
+.link {
+    text-decoration-line: none;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list .avatar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.avatar-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* ВАЖНО: элементы друг под другом */
+    align-items: center;
+    /* центр по горизонтали */
+    text-align: center;
+    /* текст тоже по центру */
+}
+
+.avatar-wrapper-elytra {
+    display: flex;
+    flex-direction: column;
+    /* ВАЖНО: элементы друг под другом */
+    align-items: center;
+    /* центр по горизонтали */
+    text-align: center;
+    /* текст тоже по центру */
+}
+
+.avatarka {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.avatarka-elytra {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.avatar-title {
+    margin: 0;
+    font-size: 20px;
+    color: var(--title-text-color);
+    transition: color 250ms var(--function-animation);
+}
+
+.avatar-title-elytra {
+    margin: 0;
+    font-size: 20px;
+    color: var(--elytra-color);
+    transition: color 250ms var(--function-animation);
+}
+
+.avatar-title:hover,
+.avatar-title:focus {
+    color: var(--accent-color);
+}
+
+.avatar-title-elytra:hover,
+.avatar-title-elytra:focus {
+    color: var(--accent-color);
+}
+
+.avatar-subtitle {
+    margin: 8px 0 0;
+    font-size: 12px;
+    line-height: 1.75;
+    max-width: 1000px;
+}
+
+.section.impotent {
+    background-color: var(--secondary-bgcolor);
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.section.works {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section.title {
+    margin: 2;
+    font-size: 128px;
+    color: var(--title-text-color);
+}
+
+.section.comand {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.hero {
+    text-align: center;
+
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image:
+        url("../images/imgbg.png");
+    background-color: #c4c4c4;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-elytra {
+    text-align: center;
+
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image:
+        url("../images/elytra_img.png");
+    background-color: #c4c4c4;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-title {
+    width: 696px;
+    color: var(--secondary-white-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+
+    text-transform: uppercase;
+
+    margin: 0 auto 30px;
+}
+
+.section-title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.title {
+    color: var(--title-text-color);
+
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.portfolio-workes .title {
+    margin-bottom: 4px;
+}
+
+.text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.comand {
+    background-color: var(--secondary-bgcolor);
+}
+
+/* скрытие текста*/
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* контейнер */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Хедер */
+
+.header {
+    border-bottom: 1px solid var(--topline-color);
+}
+
+.container.topline {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+}
+
+.site-nav .item:not(:first-child) {
+    margin-left: 50px;
+}
+
+.nav-topline {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav .link .elytra {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--elytra-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    text-align: left;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms var(--function-animation);
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    text-align: left;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms var(--function-animation);
+}
+
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    position: relative;
+
+    color: var(--accent-color);
+}
+
+/* линия через activ */
+
+.link.current::after {
+    content: "";
+    display: inline-blok;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+.contact {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.contact .item+.item {
+    margin-left: 30px;
+}
+
+.contact-link .icon {
+    display: inline-block;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.icon.post {
+    width: 26px;
+    height: 24px;
+}
+
+.icon.tell {
+    width: 28px;
+    height: 24px;
+}
+
+.contact.list .link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms var(--function-animation);
+}
+
+.contact .link:hover,
+.contact .link:focus {
+    color: var(--accent-color);
+}
+
+/* кнопка */
+
+.button {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    display: inline-block;
+    min-width: 200px;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+
+    transition: background-color 250ms var(--function-animation);
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--secondary-accent-color);
+}
+
+/* модальное окно */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+
+    transition: opacity 250ms var(--function-animation);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.7);
+    opacity: 0;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 528px;
+    height: 581px;
+    padding: 40px 39px 40px 41px;
+
+    background: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+
+    transition: transform 250ms var(--function-animation),
+        opacity 250ms var(--function-animation);
+}
+
+/* кнопка закрытия */
+
+.close-button {
+    position: absolute;
+
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+
+    margin: 0;
+    padding: 0;
+
+    cursor: pointer;
+    color: rgba(0, 0, 0, 1);
+    background: var(--primary-white-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+
+    transition: color 250ms var(--function-animation),
+        border 250ms var(--function-animation);
+}
+
+.close-button:hover,
+.close-button:focus {
+    border: 1px solid var(--secondary-accent-color);
+    color: var(--accent-color);
+}
+
+.close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    fill: currentColor;
+}
+
+/* Форма */
+
+.form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+
+    margin: 0 0 12px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field.input {
+    position: relative;
+
+    margin-bottom: 10px;
+}
+
+.form-field.textarea {
+    margin-bottom: 20px;
+}
+
+.form-field span {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}
+
+.form-field input,
+.comment {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border-color 250ms linear;
+}
+
+.form-field input {
+    margin: 0;
+    padding: 11px 42px;
+}
+
+.icon-form {
+    position: absolute;
+    left: 12px;
+    bottom: 11px;
+
+    display: inline-block;
+
+    transition: fill 250ms linear;
+}
+
+.form-field:hover,
+.form-field:focus {
+    fill: var(--accent-color);
+
+    cursor: pointer;
+}
+
+.form-field:hover input,
+.form-field:focus input,
+.form-field:hover textarea,
+.form-field:focus textarea {
+    border-color: var(--accent-color);
+
+    cursor: pointer;
+}
+
+.form-field:focus-within>input,
+.form-field:focus-within>textarea {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.form-field:focus-within>.icon-form {
+    fill: var(--accent-color);
+}
+
+.comment {
+    width: 448px;
+    height: 120px;
+
+    margin: 0;
+    padding: 12px 16px;
+}
+
+.comment::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+textarea {
+    resize: none;
+}
+
+.checkbox-field {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.link-checkbox {
+    color: var(--accent-color);
+}
+
+.icon-checkbox {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 8.38px;
+
+    border: 2px solid #2a2a2a;
+    border-radius: 2px;
+
+    transition: background-color 250ms var(--function-animation),
+        background-image 250ms var(--function-animation);
+}
+
+.checkbox:checked+.icon-checkbox {
+    border-color: transparent;
+    background-color: var(--accent-color);
+    background-image: url("../images/full-check.svg");
+    background-size: contain;
+    background-origin: border-box;
+}
+
+.send-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.89;
+    letter-spacing: 0.06em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    display: block;
+    min-width: 200px;
+    height: 50px;
+
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+
+    cursor: pointer;
+
+    transition: background-color 250ms var(--function-animation);
+}
+
+.send-button:hover,
+.send-button:focus {
+    background-color: var(--secondary-accent-color);
+}
+
+/* наши особенности */
+
+.icon-impotent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    height: 120px;
+}
+
+.list.skill>.title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    text-align: left;
+    letter-spacing: 0.03em;
+}
+
+.list.skill {
+    display: flex;
+}
+
+.list.skill .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.list.skill .item {
+    width: 270px;
+}
+
+/*чем мы занимаемся */
+
+.list.skill .title {
+    text-transform: uppercase;
+}
+
+.list.activity {
+    display: flex;
+}
+
+.list.activity .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.work-thumb {
+    position: relative;
+}
+
+.work-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    width: 370px;
+    height: 70px;
+    color: var(--primary-text-color);
+    background: rgba(72, 94, 54, 0.918);
+}
+
+.work-text {
+    margin: 0;
+    transition: color 250ms var(--function-animation);
+}
+
+.work-text:hover,
+.work-text:focus {
+    color: var(--title-text-color);
+}
+
+/* наша команда */
+
+.people {
+    display: flex;
+}
+
+.people-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.people .comand-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.people .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.profession {
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin: 0px 0px 16px;
+}
+
+.profession-elytra {
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin: 0px 0px 16px;
+}
+
+.comand-item {
+    width: 270px;
+
+    background: var(--primary-white-color);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.comand-item-elytra {
+    width: 270px;
+
+    background: var(--primary-white-color);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.social-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.social-contact .item-contact:not(:last-child) {
+    margin-right: 10px;
+}
+
+.link-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    color: var(--client-color);
+
+    transition: color 250ms var(--function-animation),
+        background-color 250ms var(--function-animation);
+}
+
+.link-contact:hover,
+.link-contact:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.icon-contact {
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
+    display: block;
+
+    fill: currentColor;
+}
+
+/* Постоянные клиенты */
+
+.client {
+    display: flex;
+}
+
+.client .item-client:not(:last-child) {
+    margin-right: 30px;
+    padding-bottom: 0;
+}
+
+.link-client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--client-color);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    color: var(--client-color);
+
+    transition: color 250ms var(--function-animation),
+        border-color 250ms var(--function-animation);
+}
+
+.link-client:hover,
+.link-client:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.client-icon {
+    fill: currentColor;
+}
+
+/* портфолио */
+
+.title-work {
+    padding: 20px 24px;
+
+    border-bottom: 1px solid var(--boder-portfolio-color);
+    border-left: 1px solid var(--boder-portfolio-color);
+    border-right: 1px solid var(--boder-portfolio-color);
+
+    background-color: var(--primary-white-color);
+}
+
+.portfolio-item {
+    width: 370px;
+    height: 404px;
+}
+
+.portfolio-item {
+    width: 370px;
+    height: 404px;
+}
+
+.filters.list {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.filters.list>.item:nth-child(n + 2) {
+    margin-left: 8px;
+}
+
+.filter {
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03;
+
+    color: var(--title-text-color);
+    background-color: var(--button-color);
+
+    display: inline-block;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: 0;
+
+    transition: color 250ms var(--function-animation),
+        background-color 250ms var(--function-animation),
+        box-shadow 250ms var(--function-animation);
+}
+
+.filter:hover,
+.filter:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-workes .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    text-align: left;
+    letter-spacing: 0.06em;
+}
+
+.title-elytra {
+    color: var(--elytra-color);
+}
+
+.portfolio-workes {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+.portfolio-item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio-item .exampl {
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: left;
+    letter-spacing: 0.03em;
+
+    margin: 0;
+}
+
+.thumb-portfolio {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-portfolio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(81, 255, 0, 0.658);
+
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 250ms var(--function-animation),
+        opacity 250ms var(--function-animation);
+}
+
+.overlay-portfolio-elytra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e100ffad;
+
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 250ms var(--function-animation),
+        opacity 250ms var(--function-animation);
+}
+
+.portfolio-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 322px;
+    height: 168px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    margin: 0;
+    padding: 0;
+
+    color: var(--primary-white-color);
+}
+
+.portfolio-text-elytra {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 322px;
+    height: 168px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    margin: 0;
+    padding: 0;
+
+    color: var(--primary-white-color);
+}
+
+.link.portfolio-link:hover .overlay-portfolio {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.link.portfolio-link {
+    display: block;
+
+    transition: box-shadow 250ms var(--function-animation);
+}
+
+.link.portfolio-link:hover,
+.link.portfolio-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
+.link.portfolio-link-elytra:hover .overlay-portfolio-elytra {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.link.portfolio-link-elytra {
+    display: block;
+
+    transition: box-shadow 250ms var(--function-animation);
+}
+
+.link.portfolio-link-elytra:hover,
+.link.portfolio-link-elytra:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/*футер*/
+
+.footer {
+    background-color: var(--head-footer-bgcolor);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.adress .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.adress .link.post {
+    color: var(--primary-white-color);
+
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: left;
+    letter-spacing: 0.03em;
+
+    transition: color 250ms var(--function-animation);
+}
+
+.adress .link {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+
+    transition: color 250ms var(--function-animation);
+}
+
+.adress .link:hover,
+.adress .link:focus,
+.adress .link.post:hover,
+.address .link.post:focus {
+    color: var(--accent-color);
+}
+
+.text-footer {
+    text-transform: uppercase;
+    color: var(--accent-color);
+
+    font-style: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin: 0 0 20px;
+}
+
+.link-contact.footer-contact {
+    color: var(--primary-white-color);
+    background-color: var(--title-text-color);
+
+    transition: background-color 250ms var(--function-animation);
+}
+
+.link-contact.footer-contact:hover,
+.link-contact.footer-contact:focus {
+    background-color: var(--accent-color);
+}
+
+.contact-box {
+    width: 206px;
+    height: 80px;
+}
+
+.container.bottom {
+    display: flex;
+    align-items: baseline;
+}
+
+.container.bottom .bottom-box {
+    margin-right: 70px;
+}
+
+.container.bottom .mail-box {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.footer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.89;
+    letter-spacing: 0.06em;
+
+    min-width: 200px;
+    height: 50px;
+
+    padding: 0;
+    margin: 0;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+
+    cursor: pointer;
+
+    transition: background-color 250ms var(--function-animation);
+}
+
+.footer-button:hover,
+.footer-button:focus {
+    background-color: var(--secondary-accent-color);
+}
+
+.icon-footer {
+    fill: currentColor;
+
+    margin-left: 10px;
+}
+
+.footer-form {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-list:not(:last-child) {
+    margin-right: 12px;
+}
+
+.mail-footer {
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    background-color: var(--head-footer-bgcolor);
+    color: var(--primary-white-color);
+
+    outline: none;
+
+    padding-left: 16px;
+
+    cursor: pointer;
+}
+
+.mail-footer::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
